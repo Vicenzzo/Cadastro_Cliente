@@ -16,7 +16,6 @@ app.get('/product', (req, res) => {
 })
 
 app.set('port', 3000 || process.env.PORT)
-
 http.createServer(app).listen(app.get('port'), () => {
     console.log(`Servidor rodando na porta ${app.get('port')}`)
 })
