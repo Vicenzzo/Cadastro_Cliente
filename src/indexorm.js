@@ -35,4 +35,21 @@
 
     console.log(resultadoSave);
 
+
+    console.log("BUSCAR TODOS OS REGISTROS ==========");
+
+    const clientes = await Cliente.findAll();
+
+    console.log(clientes);
+
+
+
+    console.log("DELETAR O REGISTRO ==========");
+
+    const clienteDelete = await Cliente.findByPk(1);
+
+    clienteDelete.destroy();
+
+
+
 })();
